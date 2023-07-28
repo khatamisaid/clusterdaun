@@ -1,0 +1,43 @@
+<div th:fragment="navbar">
+    <div class="cappa-wrap">
+        <div class="cappa-wrap-inner">
+            <nav class="cappa-menu">
+                <ul>
+                    <li> <a th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active':''}"
+                            class="nav-link" th:href="@{/}">Beranda</a>
+                    </li>
+                    <li> <a th:classappend="${#httpServletRequest.getRequestURI() == '/property' ? 'active':''}"
+                            class="nav-link" th:href="@{/property}">Property</a>
+                    </li>
+                    <li><a class="nav-link" href="#footerTop">Tentang Kami</a></li>
+                    <li style="cursor: pointer;"
+                        th:if="${session.role == 'Super User' || session.role == 'Admin' || session.role == 'Marketing'}"
+                        class="nav-item"><a class="nav-link" onclick="window.location.href = '/admin'">Halaman Admin</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cappa-footer">
+                <div class="footer-column footer-contact">
+                    <div class="footer-contact-info">
+                        <div th:replace="fragments/hubungikami :: hubungikami"></div>
+                        <img class="mt-4" th:src="@{/images/positivessl_trust_seal_lg_222x54.png}" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logo & Menu Burger -->
+    <header class="cappa-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col cappa-logo-wrap">
+                    <th:block th:utext="${websiteName}"></th:block>
+                </div>
+                <!-- Menu Burger -->
+                <div class="col-6 col-md-6 text-right cappa-wrap-burger-wrap"> <a href="#"
+                        class="cappa-nav-toggle cappa-js-cappa-nav-toggle"><i></i></a> </div>
+            </div>
+        </div>
+    </header>
+</div>

@@ -1,0 +1,165 @@
+spring:
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  application:
+    name: ClusterDaun
+  datasource:
+    url: jdbc:mysql://181.215.79.190:3306/clusterdaun
+    username: amaeschiffer
+    password: ImNumber4#@4
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: default
+    hibernate:
+      dialect: org.hibernate.dialect.MariaDB104Dialect
+      ddl-auto: none
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/
+  resources:
+    static-locations: classpath:/static/
+    cache:
+      period: 0
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+server:
+  session:
+    tracking-modes: cookie
+  ssl:
+    key-store: C:\\ssl\\clusterdaun\\keystore.p12
+    key-store-password: ImNumber4
+    keyStoreType: PKCS12
+    keyAlias: clusterdaun
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+  port: 8085
+  error:
+    whitelabel:
+      enabled: false
+    path: /error
+  servlet:
+    session:
+      timeout: 30m
+storage:
+  images: C:\\filetemp\\images\\
+  videos: C:\\filetemp\\videos\\
+  file: ./laporan/
+  reports: C:\\Users\\MTJ 03\\Music\\reports\\
+  # reports: C:\\Users\\Putri\\JaspersoftWorkspace\\MyReports\\
+---
+spring:
+  config:
+    activate:
+      on-profile: development
+  application:
+    name: ClusterDaun
+  datasource:
+    url: jdbc:mysql://181.215.79.190:3306/clusterdaun_development
+    username: amaeschiffer
+    password: ImNumber4#@4
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: default
+    hibernate:
+      dialect: org.hibernate.dialect.MariaDB104Dialect
+      ddl-auto: update
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/
+  resources:
+    static-locations: classpath:/static/
+    cache:
+      period: 0
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+server:
+  port: 8085
+  error:
+    whitelabel:
+      enabled: false
+    path: /error
+  servlet:
+    session:
+      timeout: 30m
+  session:
+    tracking-modes: cookie
+storage:
+  images: C:\\filetemp\\images\\
+  videos: C:\\filetemp\\videos\\
+  file: ./laporan/
+  reports: C:\\Users\\MTJ 03\\Music\\reports\\
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+  application:
+    name: ClusterDaun
+  datasource:
+    url: jdbc:mysql://181.215.79.190:3306/clusterdaun
+    username: amaeschiffer
+    password: ImNumber4#@4
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: default
+    hibernate:
+      dialect: org.hibernate.dialect.MariaDB104Dialect
+      ddl-auto: none
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/
+  resources:
+    static-locations: classpath:/static/
+    cache:
+      period: 0
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+security:
+  require-ssl: true
+server:
+  session:
+    tracking-modes: cookie
+  ssl:
+    key-store: /etc/letsencrypt/live/clusterdaun.com/keystore.p12
+    key-store-password: ImNumber4
+    keyStoreType: PKCS12
+    keyAlias: clusterdaun
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+  port: 8085
+  error:
+    whitelabel:
+      enabled: false
+    path: /error
+  servlet:
+    session:
+      timeout: 30m
+storage:
+  images: /home/clusterdaun.com/storage/images/
+  videos: /home/clusterdaun.com/storage/videos/
+  file: /home/clusterdaun.com/storage/file/
+  reports: /home/clusterdaun.com/storage/reports/
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /home/clusterdaun.com/logs/clusterdaun.com.jar_log
