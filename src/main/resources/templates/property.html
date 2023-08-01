@@ -94,7 +94,7 @@
                             <option value="1" selected>Termurah</option>
                             <option value="2">Termahal</option>
                         </select>
-                        <button onclick="cari()" style="background-color: #aa8453; color: white;"
+                        <button onclick="cari()" style="background-color: #3C6255;; color: white;"
                             class="btn">Cari</button>
                     </div>
                 </div>
@@ -102,11 +102,11 @@
         </div>
     </header>
     <!-- Rekomendasi -->
-    <section style="padding: 52px 0px 24px 0px;" class="news bg-cream" data-scroll-index="1" id="rekomendasi">
+    <section class="section-padding news bg-softyellow" data-scroll-index="1" id="rekomendasi">
         <div th:replace="listRekomendasi :: listRekomendasi"></div>
     </section>
     <!-- Daftar Hunian -->
-    <section style="padding-bottom: 24px;" class="news bg-cream" data-scroll-index="2" id="daftarHunian">
+    <section class="section-padding news bg-lightgreen" data-scroll-index="2" id="daftarHunian">
         <div th:replace="listProperty :: listProperty"></div>
     </section>
     <div id="tentangKami" th:replace="fragments/footerTop :: footerTop"></div>
@@ -146,10 +146,6 @@
         }
         /*]]>*/
     </script>
-    <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://onasistownhouse.com/images/positivessl_trust_seal_lg_222x54.png", "CL1", "none");
-        </script>
-        <a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
 </body>
 
 </html>

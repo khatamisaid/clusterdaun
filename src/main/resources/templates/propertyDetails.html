@@ -46,12 +46,12 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
-    <div th:replace="fragments/hubungikami :: hubungikami"></div>
+    <!-- <div th:replace="fragments/hubungikami :: hubungikami"></div> -->
     <!-- Navbar -->
     <div th:replace="fragments/navbar :: navbar"></div>
     <!-- Search Bar -->
     <!-- Pricing -->
-    <section class="pricing" style="padding: 12px 0px 48px 0px;">
+    <section class="section-padding pricing bg-lightgreen">
         <div class="container">
             <h2 th:text="${namaProperty}"></h2>
             <div class="row">
@@ -103,39 +103,39 @@
                     </div>
                     <div th:if="${property.kamarTidur != null}" class="d-flex flex-row mb-3"
                         style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-bed my-auto"></span>
-                        <p style="margin-left: 8px;" class="my-auto">Kamar Tidur</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2" th:text="${property.kamarTidur}"></p>
+                        <span style="font-size: 22px;" class="flaticon-bed my-auto color-1"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-1">Kamar Tidur</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.kamarTidur}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-bath my-auto"></span>
-                        <p style="margin-left: 8px;" class="my-auto">Kamar Mandi</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2" th:text="${property.kamarMandi}"></p>
+                        <span style="font-size: 22px;" class="flaticon-bath my-auto color-1"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-1">Kamar Mandi</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.kamarMandi}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-car my-auto"></span>
-                        <p style="margin-left: 8px;" class="my-auto">Car Port</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2" th:text="${property.carPort}"></p>
+                        <span style="font-size: 22px;" class="flaticon-car my-auto color-1"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-1">Car Port</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.carPort}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="fa-solid fa-expand my-auto"></span>
-                        <p style="margin-left: 8px;" class="my-auto">Luas Tanah</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2" th:text="${property.luasTanah} + ' m²'"></p>
+                        <span style="font-size: 22px;" class="fa-solid fa-expand my-auto color-1"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-1">Luas Tanah</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.luasTanah} + ' m²'"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="fa-regular fa-building my-auto"></span>
-                        <p style="margin-left: 8px;" class="my-auto">Luas Bangunan</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2" th:text="${property.luasBangunan} + ' m²'">
+                        <span style="font-size: 22px;" class="fa-regular fa-building my-auto color-1"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-1">Luas Bangunan</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.luasBangunan} + ' m²'">
                         </p>
                     </div>
                 </div>
                 <div th:if="${#lists.size(deskripsiArr1) > 0}" class="col" style="text-align: justify;">
-                    <p th:each="deskripsi1: ${deskripsiArr1}" style="margin-bottom: 0px;"
+                    <p class="color-1" th:each="deskripsi1: ${deskripsiArr1}" style="margin-bottom: 0px;"
                         th:text="${deskripsi1}">
                     </p>
                 </div>
                 <div th:if="${#lists.size(deskripsiArr2) > 0}" class="col" style="text-align: justify;">
-                    <p th:each="deskripsi2: ${deskripsiArr2}" style="margin-bottom: 0px;"
+                    <p class="color-1" th:each="deskripsi2: ${deskripsiArr2}" style="margin-bottom: 0px;"
                         th:text="${deskripsi2}">
                     </p>
                 </div>
@@ -218,10 +218,6 @@
         }
         /*]]>*/
     </script>
-    <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://onasistownhouse.com/images/positivessl_trust_seal_lg_222x54.png", "CL1", "none");
-        </script>
-        <a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
 </body>
 
 </html>

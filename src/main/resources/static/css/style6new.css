@@ -451,7 +451,8 @@ blockquote cite:before {
 }
 
 .bg-lightgreen {
-    background: #A6BB8D;
+    background: rgb(195, 237, 192);
+    background: linear-gradient(218deg, rgba(195, 237, 192, 1) 0%, rgba(253, 255, 174, 0.6963118010876226) 100%);
 }
 
 .bg-darkgreen {
@@ -3454,7 +3455,7 @@ hr.border-2 {
 */
 .facilties .single-facility span {
     font-size: 45px;
-    color: #aa8453;
+    color: #61876E;
     line-height: 1;
     margin-bottom: 20px;
     display: inline-block;
@@ -4600,6 +4601,7 @@ button.mfp-arrow {
 
 .pricing-card .desc {
     padding: 40px;
+    background: #61876E;
 }
 
 .pricing-card .name {
@@ -4627,7 +4629,7 @@ button.mfp-arrow {
     font-family: 'Gilda Display', serif;
     font-size: 40px;
     margin-bottom: 20px;
-    color: #aa8453;
+    color: white;
 }
 
 .pricing-card .amount span {
