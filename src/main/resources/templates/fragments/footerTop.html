@@ -35,6 +35,9 @@
                         <ul class="footer-explore-list list-unstyled">
                             <li><a th:href="@{/}">Beranda</a></li>
                             <li><a th:href="@{/property}">Property</a></li>
+                            <li
+                                th:if="${session.role == 'Super User' || session.role == 'Admin' || session.role == 'Marketing'}">
+                                <a th:href="@{/admin}">Halaman Admin</a></li>
                         </ul>
                     </div>
                 </div>

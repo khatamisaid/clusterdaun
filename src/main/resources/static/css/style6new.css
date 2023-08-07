@@ -3432,12 +3432,12 @@ hr.border-2 {
     z-index: 1;
     margin-bottom: 30px;
     line-height: 1;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .facilties .single-facility h5 {
     font-size: 24px;
-    color: #fff;
+    color: #222;
     margin-bottom: 10px;
 }
 
@@ -3465,7 +3465,7 @@ hr.border-2 {
 
 .facilties .single-facility p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
 
 .facilties .single-facility .facility-shape {
@@ -4609,7 +4609,7 @@ button.mfp-arrow {
     margin: 0;
     font-family: 'Gilda Display', serif;
     font-size: 24px;
-    color: #fff;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -4629,7 +4629,7 @@ button.mfp-arrow {
     font-family: 'Gilda Display', serif;
     font-size: 40px;
     margin-bottom: 20px;
-    color: white;
+    color: #222;
 }
 
 .pricing-card .amount span {
@@ -5809,13 +5809,13 @@ button.mfp-arrow {
 
 .footer-title {
     font-size: 24px;
-    color: #fff;
+    color: black;
     margin-bottom: 20px;
 }
 
 .footer-about-text {
     font-size: 15px;
-    color: white;
+    color: black;
     margin: 0;
 }
 
@@ -5864,7 +5864,7 @@ button.mfp-arrow {
     position: relative;
     display: block;
     font-size: 15px;
-    color: white;
+    color: black;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -5907,7 +5907,7 @@ button.mfp-arrow {
 .footer-contact-text {
     font-size: 15px;
     margin: 0;
-    color: white;
+    color: black;
     padding-bottom: 20px;
 }
 
@@ -5917,7 +5917,7 @@ button.mfp-arrow {
 
 .footer-contact-phone {
     font-size: 24px;
-    color: #fff;
+    color: black;
     font-weight: 400;
     display: block;
     -webkit-transition: all 500ms ease;
@@ -6018,12 +6018,12 @@ select {
 
 .footer-bottom-copy-right {
     font-size: 12px;
-    color: #adadad;
+    color: black;
     margin: 0;
 }
 
 .footer-bottom-copy-right a {
-    color: #fff;
+    color: #222;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
