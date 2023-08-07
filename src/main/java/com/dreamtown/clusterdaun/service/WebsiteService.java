@@ -24,7 +24,7 @@ public class WebsiteService {
                 temp += " " + splitNamaWeb[i];
             }
             String span = "<span style=\"color: white;\">" + temp + "</span>";
-            return "<h2 style='cursor:pointer' onclick=\"window.location.href='/'\" class='text-left'>" + splitNamaWeb[0] + " " + span + "</h2>";
+            return "<h2 style='cursor:pointer' onclick=\"window.location.href='/'\" class='text-left'>" + splitNamaWeb[0] + " " + temp + "</h2>";
         }
         return "<h2>" + web.getWebsiteName() + "<h2>";
     }

@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description"
-        content="Onasis Town House Rumah impian , onasistownhouse, onasis townhouse, onasis town house, property murah, harga terjangkau, tidak ada bunga, lokasi pusat kota, harga paling murah " />
+        content="Cluster Daun Rumah impian , clusterdaun, onasis townhouse, cluster daun, property murah, harga terjangkau, tidak ada bunga, lokasi pusat kota, harga paling murah " />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Onasis Town House</title>
+    <title>Cluster Daun</title>
     <link rel="shortcut icon" th:href="@{/img/favicon.png}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -53,7 +53,7 @@
     <!-- Pricing -->
     <section class="section-padding pricing bg-lightgreen">
         <div class="container">
-            <h2 th:text="${namaProperty}"></h2>
+            <h2 class="color-4" th:text="${namaProperty}"></h2>
             <div class="row">
                 <div class="col-md-8">
                     <div class="d-flex flex-column">
@@ -96,46 +96,46 @@
             <div class="row mt-5">
                 <div class="col-md-4">
                     <div class="d-flex flex-row">
-                        <h3 th:text="'Tipe '+${property.tipeProperty}"></h3>
+                        <h3 class="color-4" th:text="'Tipe '+${property.tipeProperty}"></h3>
                     </div>
                     <div class="d-flex flex-row">
-                        <h3 id="harga"></h3>
+                        <h3 class="color-4" id="harga"></h3>
                     </div>
                     <div th:if="${property.kamarTidur != null}" class="d-flex flex-row mb-3"
                         style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-bed my-auto color-1"></span>
-                        <p style="margin-left: 8px;" class="my-auto color-1">Kamar Tidur</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.kamarTidur}"></p>
+                        <span style="font-size: 22px;" class="flaticon-bed my-auto color-4"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-4">Kamar Tidur</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-4" th:text="${property.kamarTidur}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-bath my-auto color-1"></span>
-                        <p style="margin-left: 8px;" class="my-auto color-1">Kamar Mandi</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.kamarMandi}"></p>
+                        <span style="font-size: 22px;" class="flaticon-bath my-auto color-4"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-4">Kamar Mandi</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-4" th:text="${property.kamarMandi}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="flaticon-car my-auto color-1"></span>
-                        <p style="margin-left: 8px;" class="my-auto color-1">Car Port</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.carPort}"></p>
+                        <span style="font-size: 22px;" class="flaticon-car my-auto color-4"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-4">Car Port</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-4" th:text="${property.carPort}"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="fa-solid fa-expand my-auto color-1"></span>
-                        <p style="margin-left: 8px;" class="my-auto color-1">Luas Tanah</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.luasTanah} + ' m²'"></p>
+                        <span style="font-size: 22px;" class="fa-solid fa-expand my-auto color-4"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-4">Luas Tanah</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-4" th:text="${property.luasTanah} + ' m²'"></p>
                     </div>
                     <div class="d-flex flex-row mb-3" style="border-bottom: 2px solid #aa8453;">
-                        <span style="font-size: 22px;" class="fa-regular fa-building my-auto color-1"></span>
-                        <p style="margin-left: 8px;" class="my-auto color-1">Luas Bangunan</p>
-                        <p style="margin-left: auto;" class="my-auto mr-2 color-1" th:text="${property.luasBangunan} + ' m²'">
+                        <span style="font-size: 22px;" class="fa-regular fa-building my-auto color-4"></span>
+                        <p style="margin-left: 8px;" class="my-auto color-4">Luas Bangunan</p>
+                        <p style="margin-left: auto;" class="my-auto mr-2 color-4" th:text="${property.luasBangunan} + ' m²'">
                         </p>
                     </div>
                 </div>
                 <div th:if="${#lists.size(deskripsiArr1) > 0}" class="col" style="text-align: justify;">
-                    <p class="color-1" th:each="deskripsi1: ${deskripsiArr1}" style="margin-bottom: 0px;"
+                    <p class="color-4" th:each="deskripsi1: ${deskripsiArr1}" style="margin-bottom: 0px;"
                         th:text="${deskripsi1}">
                     </p>
                 </div>
                 <div th:if="${#lists.size(deskripsiArr2) > 0}" class="col" style="text-align: justify;">
-                    <p class="color-1" th:each="deskripsi2: ${deskripsiArr2}" style="margin-bottom: 0px;"
+                    <p class="color-4" th:each="deskripsi2: ${deskripsiArr2}" style="margin-bottom: 0px;"
                         th:text="${deskripsi2}">
                     </p>
                 </div>

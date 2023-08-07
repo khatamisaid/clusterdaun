@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin
 
-Sitemap: https://onasistownhouse.com/sitemap.xml
+Sitemap: https://clusterdaun.com/sitemap.xml
